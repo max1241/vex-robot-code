@@ -14,10 +14,10 @@ task main()
 	Motor[port3]= -127;
 	Motor[port4]= 127;
 	Motor[port5]= -127;
-	wait1Msec(4009);//2nd squre red to 1st red cone 4ft 7in
+	wait1Msec(2009);//2nd squre red to 1st red cone 4ft 7in
 
 	motor[arm]= 127;
-	wait1Msec(2000);
+	wait1Msec(2000); //ecks dee this a little long time for arm dont ya think?
 
 	motor[port2]= 127;
 	Motor[port3]= -127;
@@ -27,7 +27,19 @@ task main()
 
 	motor[arm]= -127;
 	wait1Msec(2000);
-
+/*idk try this lol, if no work ill work on it later
+switch(vexRt[]) {
+	case vexRt[BTn5d]: //if button 5d is pressed it executes this... THIS IS NOT A REPLACEMENT FOR IF STATEMENTS
+		motor[port3] = -127;
+			break;
+	case vexRt[BTn5d]:
+		motor[port5] = -127;
+			break;
+	case vexRt[BTn5d]:
+		motor[port2] = -127;
+			break;
+}
+*/
 
 	while ( 1 == 1)
 	{
